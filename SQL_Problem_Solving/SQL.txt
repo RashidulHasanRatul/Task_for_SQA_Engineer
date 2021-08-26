@@ -1,0 +1,16 @@
+create database Students
+
+CREATE table students_details 
+(ID int,
+ Name varchar(255),
+ Marks int )
+
+
+INSERT INTO students_details
+VALUES(1,"Ashly",81),
+(2,"Samantha",75),
+(4,"Julia",76),
+(3,"Belvet",84);
+
+
+SELECT NAME FROM students_details WHERE Marks > 75 ORDER BY RIGHT(NAME, 3), ID ASC;
